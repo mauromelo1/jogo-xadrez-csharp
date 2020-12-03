@@ -12,10 +12,17 @@ namespace tabuleiro
             this.linhas = linhas;
             this.colunas = colunas;
             pecas = new Peca[linhas, colunas];
-        }
+        } // fim Tabuleiro
 
         public Peca peca(int linha, int coluna) {
             return pecas[linha, coluna];
-        }
+        } // fim peca
+
+        public void colocarPeca(Peca p, Posicao pos) {
+            pecas[pos.linha, pos.coluna] = p;
+            p.posicao = pos;
+        } // fim colocarPeca
+
+
     }
 }
