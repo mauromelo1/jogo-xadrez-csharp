@@ -46,7 +46,6 @@ namespace xadrez
                 }
                 pos.definirValores(posicao.linha - 1, posicao.coluna + 1);
             }
-
             // se
             pos.definirValores(posicao.linha + 1, posicao.coluna + 1);
             while (tab.posicaoValida(pos) && podeMover(pos))
@@ -58,7 +57,6 @@ namespace xadrez
                 }
                 pos.definirValores(posicao.linha + 1, posicao.coluna + 1);
             }
-
             // so
             pos.definirValores(posicao.linha + 1, posicao.coluna - 1);
             while (tab.posicaoValida(pos) && podeMover(pos))

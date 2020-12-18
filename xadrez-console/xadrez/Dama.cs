@@ -4,7 +4,6 @@ namespace xadrez
 {
     class Dama : Peca   {
 
-
         public Dama(Tabuleiro tab, Cor cor) : base(tab, cor)
         {
         } // fim construtor
@@ -34,7 +33,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.linha = pos.linha - 1;
+                pos.definirValores(pos.linha - 1, pos.coluna);
             } // fim while
 
             // abaixo
@@ -46,7 +45,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.linha = pos.linha + 1;
+                pos.definirValores(pos.linha + 1, pos.coluna);
             } // fim while
 
 
@@ -59,7 +58,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.coluna = pos.coluna + 1;
+                pos.definirValores(pos.linha, pos.coluna + 1);
             } // fim while
 
 
@@ -72,7 +71,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.coluna = pos.coluna - 1;
+                pos.definirValores(pos.linha, pos.coluna - 1);
             } // fim while
 
             // no
