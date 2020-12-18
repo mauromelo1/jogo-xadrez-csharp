@@ -84,9 +84,5 @@ namespace xadrez
             return mat;
 
         } // fim movimentosPossiveis
-
-
-
-
     }
 }
